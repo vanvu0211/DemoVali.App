@@ -1,0 +1,127 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Images\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="logo-101.png" /><None Remove="logo-101.png" />
+	  
+    <None Remove="ReportTemplate.xlsx" />
+    <None Remove="Resources\Images\al2330.PNG" />
+    <None Remove="Resources\Images\ballscrew-moving.png" />
+    <None Remove="Resources\Images\ballscrew.png" />
+    <None Remove="Resources\Images\Digital Inputs.png" />
+    <None Remove="Resources\Images\IO-Link Inputs.png" />
+    
+    <None Remove="Resources\Images\logo-101.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BusyIndicators" Version="2.1.2" />
+    <PackageReference Include="LiveCharts.Core" Version="0.9.8" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+    <PackageReference Include="ViceCode.LiveCharts.Wpf" Version="1.2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="logo-101.png" />
+	  <Resource Include="logo.png" />
+    <Resource Include="Resources\Images\al2330.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+	  <Resource Include="Resources\Images\DC Motor.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  
+    <Resource Include="Resources\Images\ballscrew-moving.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ballscrew.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Digital Inputs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+	  <Resource Include="Resources\Images\ogt500_3d.PNG">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\rb_3100.PNG">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\tw2000-removebg-preview.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\Inverter.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\if_6123.PNG">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\NGA4 (1).png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\ugt_524.PNG">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\KI6000_3d.jpg">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\vitme rockwell.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\o5d150_3d.PNG">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\rvp510_3d.PNG">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\igs_232.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\al2330 (3).png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+    <Resource Include="Resources\Images\IO-Link Inputs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\logo-101.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DeploymentManifestIconFile Remove="Resources\Images\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoCaseGui.Core\DemoCaseGui.Core.csproj" />
+  </ItemGroup>
+
+</Project>
